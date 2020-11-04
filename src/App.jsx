@@ -2,20 +2,18 @@
 import { useState } from "react" 
 
 //Component test
-import Cards from "./components/Cards"
+import Card from "./components/Card"
+import information from "./information.json"
 
-//Media
-import logo from './assets/logo.svg';
+import "./styles/style.css"
 
 
 function App() {
-  //States test
-  const [total, setTotal] = useState(10);
-  const [myTitle] = useState("Title");
-
+console.log(information);
   return (
     <div className="App">
       <h1>Package track Viewer </h1>
+      <Card data={information[0]} />
     </div>
   );
 }
