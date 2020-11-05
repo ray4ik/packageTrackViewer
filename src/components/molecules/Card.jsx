@@ -21,11 +21,12 @@ export default function Card({data}) {
     last_updated,
     } = data;
     return (
-        <article className="card">
+        <div className="card">
         <h2>Parsel Id: {parcel_id}</h2>
         <p>Status: {status}</p>
         <p>sender: {sender}</p>
         <p>User name: {user_name}</p>
-        </article>
+        <p>Estimated time of arrival: {eta} </p>
+        </div>
     );
 }
