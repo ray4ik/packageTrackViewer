@@ -1,16 +1,46 @@
+
 .card {
-  user-select: none;
-  cursor: default;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card .thumbnail {
-  width: 100%;
-  height: auto;
-  margin-bottom: 8px;
-}
-
-@media only screen and (min-width: 900px) {
-  .card .meta-data {
-    padding: 0;
+/* phones */
+@media (max-width: 450px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
+
+.parcelidtitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255,255,255,.8);
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.cardcontent {
+  align-content: center;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255,255,255,.8);
+  border-radius: 10px;
+  margin: 20px;
+}
+ .cardcontent p {
+  
+    color: #000000;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 18px;
+ }
+
+

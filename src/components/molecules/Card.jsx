@@ -21,12 +21,18 @@ export default function Card({data}) {
     last_updated,
     } = data;
     return (
-        <div className="card">
-        <h2>Parsel Id: {parcel_id}</h2>
+        <div className="cardcontent">
+        <h2> Parsel Id: {parcel_id}</h2> 
         <p>Status: {status}</p>
         <p>sender: {sender}</p>
         <p>User name: {user_name}</p>
         <p>Estimated time of arrival: {eta} </p>
+        <p>Verification required: {verification_required ? "yes" : "no" } </p>
+        <p>Location: {location_name} </p>
+        <p>Location coordinates: {location_coordinate_latitude}, {location_coordinate_longitude} </p>
+        {notes && <p>notes:{notes}</p>}
+        <p>last_updated: {last_updated} </p>
         </div>
     );
+
 }

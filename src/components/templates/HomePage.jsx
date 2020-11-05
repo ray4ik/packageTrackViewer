@@ -15,7 +15,9 @@ export default function HomePage({information}) {
        <div>
         <Header />
         <h1>Package track Viewer </h1>
-        {Cards}
+        <div className ="card">
+            {Cards}
+        </div>
        </div>
     );
 }
