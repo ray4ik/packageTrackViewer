@@ -18,10 +18,10 @@ export default function HomePage({information}) {
       } = information[0];
 
     return (
-       <div>
+       <div className="home-page">
         <Header />
         
-        <h1>Welcome {user_name}</h1>
+        <h1 className="welcome">Welcome {user_name}</h1>
         
         <div className ="card">
             {Cards}

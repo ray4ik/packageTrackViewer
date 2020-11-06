@@ -7,12 +7,12 @@ import logoWeDeliver from "../../assets/img/LogoWeDeliver.png";
 export default function Header() {
   // Render
   return (
-    <header className={"header"}>
+    <header className="header">
       {/* Replace with Link later */}
       <a href="#">
          <img src={logoWeDeliver} alt="Logo" />
       </a>
-      <h2>Package track Viewer</h2>
+      <h2 className="header-title">Package track Viewer</h2>
     </header>
   );
 }
