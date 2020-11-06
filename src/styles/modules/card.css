@@ -5,10 +5,18 @@
 }
 
 /* phones */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .card {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+/* phones */
+@media (max-width: 750px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

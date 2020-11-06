@@ -8,20 +8,9 @@ Class naming:
 /* Base */
 @import url("./_base/layout.css");
 
-/* Atoms */
-@import url("./atoms/button.css");
-@import url("./atoms/horizonal-rule.css");
-@import url("./atoms/typography.css");
-
-/* Molecules */
+/* Modules */
 @import url("./modules/card.css");
-@import url("./modules/meta-data.css");
-@import url("./modules/search-bar.css");
-
-/* Organisms */
 @import url("./modules/header.css");
 
 /* Templates */
 @import url("./templates/home-page.css");
-@import url("./templates/results-page.css");
-@import url("./templates/video-page.css");
