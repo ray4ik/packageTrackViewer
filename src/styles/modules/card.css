@@ -39,16 +39,22 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: rgba(255,255,255,.8);
+  background: #f8a8c591;
   border-radius: 10px;
   margin: 20px;
 }
  .cardcontent p {
-  
     color: #000000;
     font-weight: 600;
     font-style: oblique;
     font-size: 18px;
+ }
+
+ .cardcontent h2 {
+  color: #000000;
+  font-weight: 600;
+  font-style: oblique;
+  font-size: 18px;
  }
 
 

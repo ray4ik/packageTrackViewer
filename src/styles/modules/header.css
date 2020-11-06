@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
   grid-column-gap: 16px;
-  background: #ffd400;
+  background: #FBD160;
   margin-bottom: 40px;
 }
 
