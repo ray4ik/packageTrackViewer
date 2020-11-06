@@ -12,6 +12,7 @@ export default function Header() {
       <a href="#">
          <img src={logoWeDeliver} alt="Logo" />
       </a>
+      <h2>Package track Viewer</h2>
     </header>
   );
 }

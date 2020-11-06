@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import HomePage from "./components/templates/HomePage"
 import "./styles/style.css"
 
-
 function App() {
 
   const [status, setStatus] = useState(0);
@@ -19,15 +18,11 @@ function App() {
         const response = await fetch(endpoint, {mode: "cors"})
         const data = await response.json();
 
-        console.log("inside use effect");
-        console.log(data);
-
         setInformation(data);
         setStatus(1);
       }
       catch {
-        console.log("catch use effect");
-        setStatus(0);
+        setStatus(2);
       }
     }
     GetData();
