@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="header">
       {/* Replace with Link later */}
-      <a href="#">
+      <a href="/">
          <img src={logoWeDeliver} alt="Logo" />
       </a>
       <h2 className="header-title">Package Tracking Viewer</h2>

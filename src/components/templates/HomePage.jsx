@@ -3,8 +3,6 @@ import React from "react";
 import Card from "../molecules/Card"
 import Header from "../organisms/Header"
 
-import { useState } from "react";
-
 export default function HomePage({information}) {
    
     const Cards = information.map(
