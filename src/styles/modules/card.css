@@ -5,10 +5,18 @@
 }
 
 /* phones */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .card {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+/* phones */
+@media (max-width: 750px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -31,16 +39,39 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: rgba(255,255,255,.8);
+  background: var(--color-pink4);
   border-radius: 10px;
   margin: 20px;
 }
- .cardcontent p {
-  
+
+.cardcontent p {
     color: #000000;
-    font-weight: 600;
+    font-weight: 100;
     font-style: oblique;
     font-size: 18px;
- }
+    font-family: 'Courgette', cursive;
+}
+
+.cardcontent p.statusTitle {
+  color: #000000;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 18px;
+  font-family: 'Courgette', cursive;
+}
+
+.cardcontent p span.statusDescpirtion  {
+  color: var(--color-red);
+  font-weight: 100;
+  font-style: oblique;
+  font-size: 18px;
+  font-family: 'Courgette', cursive;
+}
+.cardcontent p span.statusDescpirtionDelivered {
+  color: green;
+}
+
+
+
 
 
