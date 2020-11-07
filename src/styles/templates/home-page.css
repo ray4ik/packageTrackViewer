@@ -11,33 +11,3 @@
   
 }
 
-@media only screen and (min-width: 500px) {
-
-  .home-page .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
-  }
-}
-
-
-@media only screen and (min-width: 900px) {
-
-  .home-page .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-
-  .home-page .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 1366px) {
-
-  .home-page .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
