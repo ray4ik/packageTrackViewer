@@ -1,6 +1,9 @@
 // to let know the compiler this file needs to be render as recact 
 import React from "react"
 
+// import to parse date
+import moment from 'moment'
+
 //import react icon
 import { FiSend } from 'react-icons/fi';
 import {FaHourglassEnd} from 'react-icons/fa';
@@ -33,18 +36,17 @@ export default function Card({data}) {
         <p className="statusTitle"><FaHourglassEnd /> Status: 
             <span className={status == 'delivered' && 'statusDescpirtionDelivered' || 'statusDescpirtion'}> {status}</span>
         </p>
-        {status !== 'delivered' && <p><BiTimer />Estimated time of arrival: {eta} </p>}
+        {status !== 'delivered' && <p><BiTimer /> Estimated time of arrival: <span className="statusDescpirtion">{moment(eta).format("LLL")}</span> </p>}
         <p><FiSend />Sender: 
         <span className="statusDescpirtion"> {sender} </span></p>
         <p><GrLocationPin />Name of Location : 
-        <span className="statusDescpirtion">{location_name}</span> </p>
+        <span className="statusDescpirtion"> {location_name}</span> </p>
         <p><GoLocation />Location coordinates: 
-        <span className="statusDescpirtion">{location_coordinate_latitude}, {location_coordinate_longitude} </span></p>
+        <span className="statusDescpirtion"> {location_coordinate_latitude}, {location_coordinate_longitude} </span></p>
         {notes && <p><CgNotes />Notes: 
-            <span className="statusDescpirtion">
-                {notes}</span></p>}
+            <span className="statusDescpirtion"> {notes}</span></p>}
         <p><GrUpdate />Last update: 
-        <span className="statusDescpirtion"> {last_updated} </span></p>
+        <span className="statusDescpirtion"> {moment(last_updated).format("LLL")} </span></p>
         </div>
     );
 }
