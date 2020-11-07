@@ -4,8 +4,11 @@
 
 .home-page .welcome {
   text-align: center;
-  color: #212121;
+  color: var(--color-red);
   font-style: italic;
+  font-size: 28px;
+  font-family: 'Courgette', cursive;
+  
 }
 
 @media only screen and (min-width: 500px) {

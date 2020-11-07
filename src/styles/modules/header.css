@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
   grid-column-gap: 16px;
-  background: #FBD160;
+  background: var(--color-yellow);
   margin-bottom: 40px;
 }
 
@@ -21,8 +21,8 @@
 
 .header-title {
   font-size: 16px;
-  color: #525252;
-  font-family: 'Courgette', cursive;
+  color: var(--color-grey);
+  font-family: 'Monoton', cursive;
   font-weight: 100;
 
 }

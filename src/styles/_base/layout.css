@@ -4,7 +4,24 @@ body {
 }
 
 .App {
-  background-color: #EB63A0;
+  background-color: var(--color-pink4);
   color: #212121;
   font-family: "Roboto", sans-serif;
 }
+:root {
+
+  --color-lavender: #CDB4DB;
+  --color-pink: #FFC8DD;
+  --color-pink1: #FFAFCC;
+ 
+  --color-blue1: #BDE0FE;
+  --color-blue2: #A2D2FF;
+
+  --color-pink3: #EB63A0;
+  --color-yellow: #FBD160;
+  --color-pink4: #f8a8c591;
+  --color-grey: #525252; 
+  --color-red: #E44650; 
+}
+
+
