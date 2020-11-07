@@ -34,7 +34,7 @@ export default function Card({data}) {
         <span className="statusDescpirtion"> {parcel_id}</span>
         </p> 
         <p className="statusTitle"><FaHourglassEnd /> Status: 
-            <span className={status == 'delivered' && 'statusDescpirtionDelivered' || 'statusDescpirtion'}> {status}</span>
+            <span className={status === 'delivered' ? 'statusDescpirtionDelivered' : 'statusDescpirtion'}> {status}</span>
         </p>
         {status !== 'delivered' && <p><BiTimer /> Estimated time of arrival: <span className="statusDescpirtion">{moment(eta).format("LLL")}</span> </p>}
         <p><FiSend />Sender: 
