@@ -15,7 +15,9 @@ Than go to the project folder:
 cd package_track_viewer
 ``` 
 
-and install:
+and install as shown below. 
+Note. You have to have Node installed on your computer to use Node package manager (npm).
+
 ```bash
 npm install
 ```
