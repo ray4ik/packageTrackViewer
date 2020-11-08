@@ -5,7 +5,7 @@
 ## How to use application 
 Download git repository from https://github.com/ray4ik/package_track_viewer
 
-Go to particlar directory via Terminal and clone git repository:
+Go to the particular directory via Terminal and clone git repository:
 ```bash
 git clone https://github.com/ray4ik/package_track_viewer
 ```
@@ -49,7 +49,7 @@ This data automatically fetches from [https://my.api.mockaroo.com/orders.json?ke
 If you open file package.json it will be clear picture what packages are used. 
 ![Dependencies](./src/assets/img/documentation/dependencies.png)
 
-During development of the current app 2 additional particalar packages were used: 
+During development of the current app 2 additional particular packages were used: 
 
 * ```moment``` - to display the date correctly
 * ```react-icons``` which provides a set of icons for the every row in the cards
