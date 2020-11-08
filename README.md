@@ -25,7 +25,6 @@ To run web application make the next step:
 npm start
 ```
 
-
 You can now view package_track_viewer in the browser.
 
   Local:             [http://localhost:3000](http://localhost:3000)
@@ -52,6 +51,12 @@ If you open file package.json it will be clear picture what packages are used.
 
 During development of the current app 2 additional particalar packages were used: 
 
-* moment - to display the date correctly
-* react-icons which provides a set of icons for the every row in the cards
+* ```moment``` - to display the date correctly
+* ```react-icons``` which provides a set of icons for the every row in the cards
+
+
+## Components Diagram and Hierarchy 
+![Components Diagram ](./src/assets/img/documentation/components.png)
+The app is the single page React-application which is HomePage.jsx. 
+It consists of Header and Card components. 
 
