@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Getting Started with Package Tracking Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ This single page React-application displays a list of parcels for specific user with some details - order status, estimated time of arrival, pickup locations, sender.
 
-## Available Scripts
+## How to use application 
+Download git repository from https://github.com/ray4ik/package_track_viewer
 
-In the project directory, you can run:
+Go to the particular directory via Terminal and clone git repository:
+```bash
+git clone https://github.com/ray4ik/package_track_viewer
+```
 
-### `npm start`
+Than go to the project folder:
+```bash
+cd package_track_viewer
+``` 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+and install as shown below. 
+Note. You have to have Node installed on your computer to use Node package manager (npm).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+To run web application make the next step: 
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can now view package_track_viewer in the browser.
 
-### `npm run build`
+  Local:             [http://localhost:3000](http://localhost:3000)
+  
+  On Your Network:    [http://192.168.0.17:3000](http://192.168.0.17:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Note that the development build is not optimized.
+To create a production build, use 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+View of application: 
 
-### `npm run eject`
+![Package Tracking Viewer](./src/assets/img/documentation/Package_tracking_app.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+User can see his or her name and the list of parcel which are belongs to the user. 
+This data automatically fetches from [https://my.api.mockaroo.com/orders.json?key=e49e6840](https://my.api.mockaroo.com/orders.json?key=e49e6840)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies 
+If you open file package.json it will be clear picture what packages are used. 
+![Dependencies](./src/assets/img/documentation/dependencies.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+During development of the current app 2 additional particular packages were used: 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* ```moment``` - to display the date correctly
+* ```react-icons``` which provides a set of icons for the every row in the cards
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Components Diagram and Hierarchy 
+![Components Diagram ](./src/assets/img/documentation/components.png)
+The app is the single page React-application which is HomePage.jsx. 
+It consists of Header and Card components. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
