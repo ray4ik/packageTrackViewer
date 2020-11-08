@@ -25,7 +25,33 @@ To run web application make the next step:
 npm start
 ```
 
-Than browser automatically runs and user can see the next screen at the address [http://localhost:3000](http://localhost:3000)
 
+You can now view package_track_viewer in the browser.
 
+  Local:             [http://localhost:3000](http://localhost:3000)
+  
+  On Your Network:    [http://192.168.0.17:3000](http://192.168.0.17:3000)
+
+Note that the development build is not optimized.
+To create a production build, use 
+
+```bash
+npm run build
+```
+
+View of application: 
+
+![Package Tracking Viewer](./src/assets/img/documentation/Package_tracking_app.png)
+
+User can see his or her name and the list of parcel which are belongs to the user. 
+This data automatically fetches from [https://my.api.mockaroo.com/orders.json?key=e49e6840](https://my.api.mockaroo.com/orders.json?key=e49e6840)
+
+## Dependencies 
+If you open file package.json it will be clear picture what packages are used. 
+![Dependencies](./src/assets/img/documentation/dependencies.png)
+
+During development of the current app 2 additional particalar packages were used: 
+
+* moment - to display the date correctly
+* react-icons which provides a set of icons for the every row in the cards
 
