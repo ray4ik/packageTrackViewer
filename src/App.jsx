@@ -1,7 +1,7 @@
 //React Core 
 import React, { useEffect, useState } from "react";
 
-//import information from "./information.json"
+import informationAlt from "./information.json"
 import HomePage from "./components/templates/HomePage"
 import "./styles/style.css"
 
@@ -39,8 +39,10 @@ function App() {
     <div className="App">
           {status === 0 ? <p>Loading...</p> : null}
           {status === 1 ? <HomePage information={information} /> : null}
-          {status === 2 ? <p>Sorry we cannot find data</p> : null}
-    </div>
+          {status === 2 ? <p>Sorry we cannot find data from end-point, taking the hardcoded alternative data
+            <HomePage information={informationAlt} />
+          </p>  : null}
+    </div> 
   );
 }
 
