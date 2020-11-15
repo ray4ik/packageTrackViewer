@@ -20,8 +20,12 @@ function App() {
         const response = await fetch(endpoint, {mode: "cors"})
         const data = await response.json();
 
-        setInformation(data);
-        setStatus(1);
+        if (response.ok) {
+          setInformation(data);
+          setStatus(1);
+        } else {
+          setStatus(2);
+        }        
       }
       catch {
         setStatus(2);
